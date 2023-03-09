@@ -12,6 +12,11 @@
     height:100%;
   }
   
+  .flex-container{
+    display: block;
+    justify-content:space-evenly;
+}
+
   body {
     margin:0;
   }
@@ -37,18 +42,6 @@
     animation-duration:5s;
   }
   
-  .content {
-    background-color:rgba(255,255,255,.8);
-    border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
-    box-sizing:border-box;
-    left:50%;
-    padding:10vmin;
-    position:fixed;
-    text-align:center;
-    top:50%;
-    transform:translate(-50%, -50%);
-  }
   
   h1 {
     font-family:monospace;
@@ -62,42 +55,6 @@
       transform:translateX(25%);
     }
   }
-.bg-image {
-        /* The image used */
-        background-image: url("https://www.opus-software.com.br/wp-content/uploads/2021/03/api-open-banking-1-scaled-e1617044252214.jpg");
-      
-        /* Add the blur effect */
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
-      
-        /* Full height */
-        height: 110%;
-        width: 110%;
-      
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      
-      /* Position text in the middle of the page/image */
-.bg-text {
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-        color: white;
-        font-weight: bold;
-        border: 3px solid #f1f1f1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-      }
-
-
 
 img {
     border: 5px solid #000000;
@@ -118,34 +75,42 @@ html {
   box-sizing: inherit;
 }
 
+
+
 .card {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.445);
   margin: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 5%;
   width: 30%;
-  padding: 20px;
   background: #ffffff;
+  left:46%;
+  padding: 5%;
+  position:fixed;
+  text-align:center;
+  top:40%;
+  transform:translate(-50%, -50%);
 }
 
 .title {
   color: rgb(8, 8, 8);
-  font-size: 8px;
+  font-size: 60%;
+}
+
+.title2 {
+  color: rgb(8, 8, 8);
+  font-size: 150%;
 }
 
 .button {
   background-color: #0073ff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.445);
-  border: coral;
+  border: rgb(0, 0, 0);
   color: rgb(130, 194, 255);
   padding: 4px 8%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
-  margin: 4px 2px;
+  font-size: 100%;
   cursor: pointer;
   border-radius: 3%;
 }
@@ -157,26 +122,27 @@ html {
 </head>
 <body>
 <div style="position: fixed; z-index: -99; width: 99%; height: 100%">
-  <div class="bg"></div>
+ <div class="bg"></div>
  <div class="bg bg2"></div>
  <div class="bg bg3"></div>
- <div class="content">
-</div>
-</div>
-</div>
- <div class="align-items-center">
-    <div class="card">
-      <img src="https://avatarfiles.alphacoders.com/320/320111.png" alt="xly" style="border-radius: 50%; max-width: 700px;box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.445);" class="center">
-      <div class="container-fluid" style="text-align: center; align-items:center">
-        <h2 class="" style="text-align: center; color:rgb(0, 0, 0); height: 25px">Xly<a href="https://www.python.org"><input type="image" style="width: 25px; height:25px;padding: 0px 5px" src="https://www.pngkit.com/png/full/70-701749_this-free-icons-png-design-of-python-language.png"/></a></h2>
-        <p class="title">🔗 @rilliat | archon.net.br | C'est la vie 🌃 | api's on</p>
-        <p style="text-align: center"><b>API /REST API</b></p></p>
-        <p><a href="https://flask.palletsprojects.com/en/2.2.x/"><input type="image" style="width: 10%; height: 10%" src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png"/></a><a href="https://beautiful-soup-4.readthedocs.io/en/latest/"><input type="image" style="width: 10%; height:10%;padding: 0px 5px; border-radius: 20%" src="https://scrapfly.io/blog/content/images/common_tags-beautifulsoup.png"/></a><a href="https://requests.readthedocs.io/en/latest/"><input type="image" style="width: 10%; height: 10%;padding: 0px 2px" src="https://requests.readthedocs.io/en/latest/_static/requests-sidebar.png"/></a><a href="https://www.selenium.dev/documentation/"><input type="image" style="width: 10%; height:10%; padding: 0px 3px ; border-radius: 20%" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png"/></a><a href="https://portswigger.net"><input type="image" style="width: 10%; height:10%; border-radius: 20%" src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T1040A14PA2252PT32X45Y15D1048988360W3404H3404Cx0094FF%3AxFFFFFF/views/1,width=500,height=500,appearanceId=14,backgroundColor=ffffff/burp-suite-enterprise-edition-trucker-cap.jpg"/></a></p>
-        <p style="text-align: center"></p></p>
-        <a href='https://t.me/uncomputerized'><button class="button"><input type="image" style="width: 20px; height: 20px; float: left; margin: 1px 5px; align-items: left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Telegram_2019_simple_logo.svg/768px-Telegram_2019_simple_logo.svg.png" />Telegram</button></a> 
+  <div class="flex-container" style="justify-content: center;">
+   <div class="card">
+    <img src="https://avatarfiles.alphacoders.com/320/320111.png" alt="xly" style="border-radius: 50%; max-width: 700px;box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.445);" class="center">
+    <div class="" style="text-align: center; justify-content: center">
+      <h2 class="title2" style="text-align: center; color:rgb(0, 0, 0); height: 25px">Xly<a href="https://www.python.org"><input type="image" style="width: 25px; height:25px;padding: 0px 5px" src="https://www.pngkit.com/png/full/70-701749_this-free-icons-png-design-of-python-language.png"/></a></h2>
+      <p class="title">🔗 @rilliat | archon.net.br | C'est la vie 🌃 | api's on</p>
+      <p style="text-align: center"><b>API /REST API</b></p></p>
+      <p><a href="https://flask.palletsprojects.com/en/2.2.x/"><input type="image" style="width: 10%; height: 10%" src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png"/></a><a href="https://beautiful-soup-4.readthedocs.io/en/latest/"><input type="image" style="width: 10%; height:10%;padding: 0px 5px; border-radius: 20%" src="https://scrapfly.io/blog/content/images/common_tags-beautifulsoup.png"/></a><a href="https://requests.readthedocs.io/en/latest/"><input type="image" style="width: 10%; height: 10%;padding: 0px 2px" src="https://requests.readthedocs.io/en/latest/_static/requests-sidebar.png"/></a><a href="https://www.selenium.dev/documentation/"><input type="image" style="width: 10%; height:10%; padding: 0px 3px ; border-radius: 20%" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png"/></a><a href="https://portswigger.net"><input type="image" style="width: 10%; height:10%; border-radius: 20%" src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T1040A14PA2252PT32X45Y15D1048988360W3404H3404Cx0094FF%3AxFFFFFF/views/1,width=500,height=500,appearanceId=14,backgroundColor=ffffff/burp-suite-enterprise-edition-trucker-cap.jpg"/></a></p>
+      <a href='https://t.me/uncomputerized'><button class="button"><input type="image" style="width: 20px; height: 20px; float: left; margin: 1px 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Telegram_2019_simple_logo.svg/768px-Telegram_2019_simple_logo.svg.png"/>Telegram</button></a> 
+      </p>
     </div>
+    </div>  
   </div>
- </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 </body>
 </html>
